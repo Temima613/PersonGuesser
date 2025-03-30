@@ -37,13 +37,14 @@ body {
 header {
     width: 100%;
     background-color: var(--header-bg-color);
-    color: #fff;
+    color:crimson; /*changed header text color*/
     text-align: center;
 }
 
 header h1 {
     font-size: var(--header-font-size);
     font-weight: bold;
+    text-shadow: #222 2px 2px 2px;
 }
 
 /* Main Content */
@@ -139,7 +140,8 @@ ul li {
 
 #predictBtn:hover {
     background-color: var(--button-hover-color);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /*slighty changed box shadow*/
+    transform: scale(1.5); /*button grows when hovered over*/
 }
 
 #predictBtn:active {
@@ -169,4 +171,8 @@ footer {
 
 footer p {
     margin: 6px;
+} 
+.description h2, .result h2{
+    color: crimson; /* added color to header text*/
 }
+
